@@ -1,0 +1,33 @@
+<br>
+<br>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Liste des monuments</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Description</th>
+            <th>image</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let m of monuments | async">
+            <td>{{ m.nom}}</td>
+            <td>{{ m.description}}</td>
+            <td>{{ m.img}}</td>
+            <td><button  (click)="deletem(m.id)" class="btn btn-danger">Delete</button>
+                <button (click)="selectMonument(m.id)" class="btn btn-info" style="margin-left: 10px">update</button>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot> <tr><th  rowspan="4" style="text-align:center;">  <button  (click)="creer()" class="btn btn-success">Ajouter un nouveau monument</button></th></tr></tfoot>
+      </table>
+    </div>
+  </div>
+</div>
+

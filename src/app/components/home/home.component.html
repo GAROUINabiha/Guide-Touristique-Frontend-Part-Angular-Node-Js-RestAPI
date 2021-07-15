@@ -1,0 +1,104 @@
+<head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+<!-- SECTION -->
+
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h4 class="title">Un grand port de commerce, une vieille ville entourée de remparts couleur de parchemin… Sfax présente un visage authentique de la Tunisie. Face à elle, les îles Kerkennah offrent la poésie de leurs paysages préservés et leurs longues plages de sable fin.s </h4>
+                </div>
+            </div>
+
+        </div>
+        <!-- /row -->
+
+    <!-- /container -->
+
+<!-- /SECTION -->
+<!-- SECTION -->
+
+    <!-- container -->
+
+        <!-- row -->
+        <div class="row">
+            <!-- section title -->
+
+            <div class="col-md-12">
+              <div class="section-title">
+                  <h3 class="title">Les monumens hostoriques de SFAX</h3>
+              </div>
+          </div>
+          <!-- /section title -->
+          <!-- Products tab & slick -->
+          <div class="col-md-12">
+              <div class="row">
+                  <div class="col-md-4 col-sm-6" *ngFor="let monument of monuments|async">
+                      <div class="card my-2">
+                          <img [src]="monument.img" alt="{{monument.id}}" class="card-img-top" (click)="selectMonument(monument.id)">
+                          <div class="card-header" style="
+  border-bottom-width: 0px;
+  padding-bottom: 1px;    padding-top: 1px;
+
+">
+                              <div class="card-title" style="margin-bottom: 1px; margin-top: 1px;">
+                                  <strong> <h5>
+                                     monument {{monument.nom| titlecase}}
+                                  </h5></strong>
+
+                              </div>
+                              <div class="card-body">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    <!-- /container -->
+    <!-- NEWSLETTER -->
+    <div id="newsletter" class="section">
+        <!-- container -->
+
+            <!-- row -->
+            <!-- row -->
+            <div class="row">
+                <!-- shop -->
+                <div class="col-md-4 col-xs-6">
+                    <div class="s">
+                        <img src="" width="160px" alt=""> <br>
+                        <h5>
+                            <strong>  <p>  Trajets actuellement </p>   </strong>
+                        </h5>
+                    </div>
+                </div>
+                <!-- /shop -->
+                <div class="col-md-4 col-xs-6">
+                    <div class="s">
+                        <img src="" width="160px" alt="">
+                        <h5>
+                            <strong>  <p>  Membres </p>   </strong>
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-6">
+                    <div class="s">
+
+                        <img src="" width="160px" alt="">
+                        <h5>
+                            <strong>
+                              <p> 0 Trajets reservés </p></strong>
+                        </h5>
+                    </div>
+                </div>
+
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /NEWSLETTER -->

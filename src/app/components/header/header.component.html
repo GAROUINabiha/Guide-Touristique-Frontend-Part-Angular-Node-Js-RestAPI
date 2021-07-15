@@ -1,0 +1,60 @@
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+
+
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">SmartGuide</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav">
+            <li class="active"><a routerLink="/"> <span class="glyphicon glyphicon-home"></span>&nbsp;HOME <span class="sr-only">(current)</span></a></li>
+            <li><a routerLink="/reclamation"><span class="glyphicon glyphicon-send"></span>&nbsp;Contact</a></li>
+            <li><a routerLink="/reclamation"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;About us</a></li>
+          </ul>
+          <!-- on right -->
+          <ul class="nav navbar-right">
+            <li><a href="#">Bienvenue </a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+
+  <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <div class="wrapper">
+        <img [src]="images[0]" alt="Random first slide" width="1500" height="400">
+      </div>
+      <div class="carousel-caption">
+        <h3>Sfax, Tunisie</h3>
+        <p> Top visites à Sfax</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="wrapper">
+        <img [src]="images[1]" alt="Random second slide" width="1500" height="400">
+      </div>
+      <div class="carousel-caption">
+        <h3>Sfax, Tunisie</h3>
+        <p> Top visites à Sfax</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="wrapper">
+        <img [src]="images[2]"  alt="Random third slide" width="1500" height="400">
+      </div>
+      <div class="carousel-caption">
+
+      </div>
+    </ng-template>
+  </ngb-carousel>
+
+

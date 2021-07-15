@@ -1,0 +1,74 @@
+<head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+<!-- SECTION -->
+<div class="section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <!-- Product main img -->
+            <div class="col-md-5">
+                <div id="product-main-img">
+                    <div class="product-preview">
+                        <img style="float: left;" [src]="monument.img" alt="{{monument.id}}">
+                    </div>
+                    <BR>
+                    <h5>
+                        <strong>     <p>  </p></strong>
+                    </h5>
+                </div>
+            </div>
+            <!-- /Product main img -->
+            <!-- Product details -->
+            <div class="col-md-5">
+                <div class="product-details">
+                    <h2 class="product-name"></h2>
+                    <div>
+                        <div class="product-rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <a (click)="selectMonumentt(monument.id)"> Ajouter votre avis</a>
+                    </div>
+                    <div>
+                        <span class="product-available">
+                          <h4>Monument</h4>
+                        </span>
+                    </div>
+                    <br>
+                    <p><strong>
+                         <h5>
+                       {{monument.nom}}</h5>
+                       </strong></p>
+                    <br>
+                    <p><strong>
+                          <h5>
+                        gggg {{monument.id}}</h5>
+                        </strong></p>
+
+
+                    <div class="add-to-cart">
+                        <div class="qty-label">
+
+                            <div class="input-number">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <!-- /Product details -->
+
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /SECTION -->
